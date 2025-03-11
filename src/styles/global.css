@@ -1,1 +1,8 @@
 /* Globale styles her */
+:root {
+  --content-width: 120rem;
+}
+body {
+  /*viewport width*/
+  grid-template-columns: 1fr minmax(0, var(--content-width)) 1fr;
+}
