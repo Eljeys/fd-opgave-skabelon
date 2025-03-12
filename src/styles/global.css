@@ -177,7 +177,7 @@
   --button-border-r: 2.625rem;
 
   /*Font-size*/
-  --body-text: 1rem;
+  --body-text: 1.125rem;
   --heading-1: 3.125rem;
   --heading-2: 2.81rem;
   --heading-3: 2.5rem;
@@ -198,26 +198,3 @@
   --heading-lineheight: 1.3;
   --button-txt-lineheight: 1.6;
 }
-a {
-  text-decoration: none;
-  color: #fff;
-  font-family: var(--font-family);
-}
-p {
-  font-family: var(--font-family);
-}
-h5 {
-  text-box-trim: trim-both;
-  color: var(--secondary-2);
-  font-size: var(--heading-5);
-  font-weight: var(--font-weight-heading);
-  font-family: var(--font-family-heading);
-}
-
-/* body {
-  viewport width
-  grid-template-columns: 1fr minmax(0, var(--content-width)) 1fr;
-  > * {
-    grid-column: 2;
-  }
-} */
