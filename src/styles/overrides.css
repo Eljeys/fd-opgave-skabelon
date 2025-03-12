@@ -8,7 +8,20 @@ a {
 p {
   font-family: var(--font-family);
   font-size: var(--body-text);
+  line-height: var(--body-text-lineheight);
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+}
+h1 {
+  font-size: var(--heading-1);
+}
+
 h5 {
   text-box-trim: trim-both;
   color: var(--secondary-2);
