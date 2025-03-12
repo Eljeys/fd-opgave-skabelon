@@ -1,11 +1,17 @@
 ---
 import Services from "./Services.astro";
 import Button from "./Button.astro";
+import Circlepattern from "../icons/pattern.svg"
 ---
 
 <section class="hero">
   <!-- Markup her -->
+   <div>
    <img src="/public/images/index_hero.png" alt="girl looking directly in the camera">
+   </div>
+   <div class="patten">
+    <Circlepattern />
+   </div>
    <article>
     <h1>Empowering Your Business Growth</h1>
     <p>Discover tailored strategies and expert insights to take your business to the next level. Let us help you navigate challenges and achieve sustainable success.</p>
@@ -27,14 +33,32 @@ import Button from "./Button.astro";
   .btnBg{
     background-color: var( --secondary-2);
     border:solid #EBEBEB;
+    width: fit-content;
   }
- 
+  .patten{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+  }
+  
+  
   
   .hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: var(  --secondary-2);
     background-color: var(--primary-3);
-
   }
+  article{
+    border: solid green;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    align-items: center;
+    margin: auto;
+    max-width: 45ch;
+    height: fit-content;
+    /*gør brug af flow-space*/
+}
 </style>
