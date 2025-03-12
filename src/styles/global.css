@@ -164,6 +164,7 @@
   --secondary-2: #fff;
   --text-clr: #595566;
   --heading-clr: #1c1c1c;
+  --header-bg: rgba(27, 27, 27, 0.91);
 
   /*Button colors*/
   --defaul-1-btn-bg-clr: var(--primary-3);
@@ -195,8 +196,28 @@
   --body-text-lineheight: 1.475;
   --list-lineheight: 2.145;
   --heading-lineheight: 1.3;
+  --button-txt-lineheight: 1.6;
 }
-body {
-  /*viewport width*/
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--font-family);
+}
+p {
+  font-family: var(--font-family);
+}
+h5 {
+  text-box-trim: trim-both;
+  color: var(--secondary-2);
+  font-size: var(--heading-5);
+  font-weight: var(--font-weight-heading);
+  font-family: var(--font-family-heading);
+}
+
+/* body {
+  viewport width
   grid-template-columns: 1fr minmax(0, var(--content-width)) 1fr;
-}
+  > * {
+    grid-column: 2;
+  }
+} */
